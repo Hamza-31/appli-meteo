@@ -1,5 +1,6 @@
 package com.example.meteo;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -24,7 +25,7 @@ public class FragmentList<P extends ListProvider<E>, E> extends Fragment {
     public FragmentList() {
         // Required empty public constructor
     }
-
+    @SuppressWarnings("unchecked")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

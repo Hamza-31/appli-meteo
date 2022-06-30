@@ -52,7 +52,7 @@ public class ActivityMeteo extends AppCompatActivity {
             this
                     .getSupportFragmentManager()
                     .beginTransaction()
-                    .add(R.id.container, new FragmentList())
+                    .add(R.id.container, new FragmentList<OWM,OWM.Observation>())
                     .commit();
         }
     }
